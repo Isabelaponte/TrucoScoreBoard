@@ -1,4 +1,4 @@
-package br.edu.ifsp.scl.sc3035018.myapplication
+package br.edu.ifsp.scl.sc3035018.trucoscoreboard
 
 import org.junit.Test
 

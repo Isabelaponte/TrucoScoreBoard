@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "br.edu.ifsp.scl.sc3035018.myapplication"
+    namespace = "br.edu.ifsp.scl.sc3035018.trucoscoreboard"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "br.edu.ifsp.scl.sc3035018.myapplication"
+        applicationId = "br.edu.ifsp.scl.sc3035018.trucoscoreboard"
         minSdk = 26
         targetSdk = 37
         versionCode = 1

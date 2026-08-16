@@ -1,4 +1,4 @@
-package br.edu.ifsp.scl.sc3035018.myapplication
+package br.edu.ifsp.scl.sc3035018.trucoscoreboard
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("br.edu.ifsp.scl.sc3035018.myapplication", appContext.packageName)
+        assertEquals("br.edu.ifsp.scl.sc3035018.trucoscoreboard", appContext.packageName)
     }
 }
