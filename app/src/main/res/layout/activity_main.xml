@@ -8,12 +8,140 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/titlePage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Placar de Truco"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/toast11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ainda não há equipes em mão de 11!"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/titlePage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="15sp"
+        />
+
+    <TextView
+        android:id="@+id/labelNameA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equipe A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toast11"
+        app:layout_constraintEnd_toStartOf="@id/counterB"
+        />
+
+    <TextView
+        android:id="@+id/labelNameB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equipe B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toast11"
+        app:layout_constraintStart_toEndOf="@id/counterA"
+        />
+
+    <TextView
+        android:id="@+id/counterA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelNameA"
+        app:layout_constraintEnd_toStartOf="@id/counterB"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/counterB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelNameB"
+        app:layout_constraintStart_toEndOf="@id/counterA"
+        android:padding="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnAddPointsA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 1 ponto"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counterA"
+        app:layout_constraintEnd_toStartOf="@id/counterB"
+        />
+
+    <Button
+        android:id="@+id/btnAddPointsB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 1 ponto"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counterB"
+        app:layout_constraintStart_toEndOf="@id/counterA"/>
+
+    <Button
+        android:id="@+id/btnAdd3PointsA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 3 pontos"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddPointsA"
+        app:layout_constraintEnd_toStartOf="@id/counterB"
+        />
+
+    <Button
+        android:id="@+id/btnAdd3PointsB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 3 pontos"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddPointsB"
+        app:layout_constraintStart_toEndOf="@id/counterA"/>
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nenhuma equipe ganhou ainda!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd3PointsA"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="15sp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btnReload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Partida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20sp"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
