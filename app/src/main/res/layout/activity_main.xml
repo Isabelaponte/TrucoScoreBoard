@@ -41,6 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toast11"
         app:layout_constraintEnd_toStartOf="@id/counterB"
+        android:paddingTop="50sp"
         />
 
     <TextView
@@ -52,6 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toast11"
         app:layout_constraintStart_toEndOf="@id/counterA"
+        android:paddingTop="50sp"
         />
 
     <TextView
@@ -129,7 +131,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAdd3PointsA"
         app:layout_constraintStart_toStartOf="parent"
-        android:padding="15sp"
+        android:paddingTop="50sp"
         android:textAlignment="center"
         />
 
